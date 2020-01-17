@@ -1,10 +1,32 @@
 #include <avr/io.h>
+#ifdef _SIMULATE_
+#inlcude "simAVRHeader.h"
+#endif
 
-int main(void){
-	DDRB = 0xFF; // Configure port B's 8 pins as outputs
-	PORTB = 0x00; // Initialize PORTB output to 0’s
-	while(1){
-		PORTB = 0x0F; // Writes port B's 8 pins with 00001111
+int main(void)
+{
+	DDRA = 0x00; PORTA = 0xFF;
+	DDRB = 0xFF; PORTB = 0x00;
+	unsigned char tmpB = 0x00;
+
+	unsigned char button = 0x00;
+
+	while(1)
+	{
+		button = PINA & 0x01;
+
+		if (button == 0x01)
+		{
+		tmpB = (tmpB & 0xFC0 | 0x01;
+		}
+
+		else
+		{
+		tmpB = (tmpB & 0xFc) | 0x02;
+		}
+
+	PORTB = tmpB;
 	}
-	return 1;
+}
+
 
