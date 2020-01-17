@@ -2,17 +2,180 @@
 
 int main(void){
 	DDRB = 0xFF; // Configure port B's 8 pins as outputs
+	PORTA = 0x00;
 	PORTB = 0x00; // Initialize PORTB output to 0’s
-	while(1){
+	while(1)
+{
 	PORTB = 0x0F; // Writes port B's 8 pins with 00001111
 
-	while(1)
-	{
-	if (PORTA1=0x01)
+	if (PORTA0=0x01)
 		{
-		printf("PortA is On");
+		printf("PortA0 is On");
+		PORTA0 = 1;
+		else
+			{
+			PORTA0 = 0;
+			}
 		} 
+        if (PORTA1=0x02)
+                {
+                printf("PortA1 is On");
+                PORTA1 = 1;
+                else
+                        {
+                        PORTA1 = 0;
+                        }
+                }
+        if (PORTA2=0x03)
+                {
+                printf("PortA2 is On");
+                PORTA2 = 1;
+                else
+                        {
+                        PORTA2 = 0;
+                        }               
+ }
+        if (PORTA3=0x04)
+                {
+                printf("PortA3 is On");
+                PORTA3 = 1;
+                else
+                        {
+                        PORTA3 = 0;
+                        }  
+              }
+
+        if (PORTA4=0x05)
+                {
+                printf("PortA4 is On");
+                PORTA4 = 1;
+                else
+                        {
+                        PORTA4 = 0;
+                        }
+               
+ }
+        if (PORTA5=0x06)
+                {
+                printf("PortA5 is On");
+                PORTA5 = 1;
+                else
+                        {
+                        PORTA5 = 0;
+                        }              
+ }
+
+        if (PORTA6=0x07)
+                {
+                printf("PortA6 is On");
+                PORTA6 = 1;
+                else
+                        {
+                        PORTA6 = 0;
+                        }
+          }
+        if (PORTA7=0x08)
+                {
+                printf("PortA7 is On");
+                PORTA7 = 1;
+                else
+                        {
+                        PORTA7 = 0;
+                        }
+		} 
+
+
+
+
+
+
+        if (PORTB0=0x01)
+                {
+                printf("PortB0 is On");
+                PORTB0 = 1;
+                else
+                        {
+                        PORTB0 = 0;
+                        }
+                }
+        if (PORTB1=0x02)
+                {
+                printf("PortB1 is On");
+                PORTB1 = 1;
+                else
+                        {
+                        PORTB1 = 0;
+                        }
+                }
+        if (PORTB2=0x03)
+                {
+                printf("PortB2 is On");
+                PORTB2 = 1;
+                else
+                        {
+                        PORTB2 = 0;
+                        }
+ }
+        if (PORTB3=0x04)
+                {
+                printf("PortB3 is On");
+                PORTB3 = 1;
+                else
+                        {
+                        PORTB3 = 0;
+                        }
+              }
+
+        if (PORTB4=0x05)
+                {
+                printf("PortB4 is On");
+                PORTB4 = 1;
+                else
+                        {
+                        PORTB4 = 0;
+                        }
 	}
+        if (PORTB5=0x06)
+                {
+                printf("PortB5 is On");
+                PORTB5 = 1;
+                else
+                        {
+                        PORTB5 = 0;
+                        }
+ }
+
+        if (PORTB6=0x07)
+                {
+                printf("PortB6 is On");
+                PORTB6 = 1;
+                else
+                        {
+                        PORTB6 = 0;
+                        }
+          }
+        if (PORTB7=0x08)
+                {
+                printf("PortB7 is On");
+                PORTB7 = 1;
+                else
+                        {
+                        PORTB7 = 0;
+                        }
+                }
+
+ }
+             
+PORTA0+PORTA1+PORTA2+PORTA3+PORTA4+PORTA5+PORTA6+PORTA7 = TotalA ;
+PORTB0+PORTB1+PORTB2+PORTB3+PORTB4+PORTB5+PORTB6+PORTB7 = TotalB ;
+
+scanf("%d", &TotalA);
+scanf("%d", &TotalB);
+printf("There are %d A Outputs and %d B Outputs that are on",TotalA, TotalB);
+
+
+
+}
 	}
 	return 1;
 }
