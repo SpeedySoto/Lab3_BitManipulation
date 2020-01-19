@@ -1,11 +1,12 @@
 /*	Partner(s) Name & E-mail: None
  *	Lab Section: 023
- *	Assignment: Lab #3  Exercise #2 
+ *	Assignment: Lab #3  Exercise #1 
  *	Exercise Description: [optional - include for your own benefit]
  *	
  *	I acknowledge all content contained herein, excluding template or example
  *	code, is my own original work.
  */
+
 
 
 
@@ -15,28 +16,28 @@ int main(void){
         DDRB = 0xFF; // Configure port B's 8 pins as outputs
         PORTA = 0x00;
         PORTC = 0x00;
-        Light = 0x01;
+	Light = 0x01;
 
         while(1)
 {
-        if(PORTA0||PORT1||PORT2||PORT3 = 1||2)
-        {
-        PORTC5 && PORT6 =Light;
-        scanf("Low fuel");
-        }
-
-        if(PORTA0||PORT1||PORT2||PORT3  = 3||4)
+ 	if(PORTA0||PORT1||PORT2||PORT3 = 1||2)
+	{
+	PORTC5 && PORT6 =Light;
+	scanf("Low fuel");
+	}
+	
+	if(PORTA0||PORT1||PORT2||PORT3  = 3||4)
         {
         PORTC5 && PORTC6 && PORTC4 =Light;
         scanf("Low fuel");
         }
 
-        if(PORTA0||PORT1||PORT2||PORT3  = 5||6)
+	if(PORTA0||PORT1||PORT2||PORT3  = 5||6)
         {
         PORT5 && PORT4 && PORT3 =Light;
         }
 
-        if(PORTA0||PORT1||PORT2||PORT3  = 7||8||9)
+	if(PORTA0||PORT1||PORT2||PORT3  = 7||8||9)
         {
         PORT5 && PORT4 && PORT3 && PORT2 =Light;
         }
@@ -46,14 +47,16 @@ int main(void){
         PORT5 && PORT4 && PORT3 && PORT2 && PORT1 =Light;
         }
 
-        if(PORTA0||PORT1||PORT2||PORT3  = 13||14||15)
+	if(PORTA0||PORT1||PORT2||PORT3  = 13||14||15)
         {
         PORT5 && PORT4 && PORT3 && PORT2 && PORT1 && PORT0=Light;
         }
 
-        return 1;
+	return 1;
 }
 
 
 
 
+
+        
